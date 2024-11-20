@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleHome.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/icons/icon laptop.jpeg" />
+    <title>Laptop Rental</title>
+  </head>
+  <body>
+    <!-- nyoba buat intro  -->
+    <div class="intro" id="intro">
+      <p>welcome to </p> 
+      <p>Kelompok 4</p>
+    </div>
+    <div class="heroContainer">
+      <div class="hero-one">
+        <div class="logo">
+          <p>LAPTOPPEDIA</p>
+        </div>
+
+        <!-- ini page pertama  -->
+        <div class="heroSection">
+          <img
+            src="images/Huawei Laptop.jpg"
+            class="fotoPertama"
+            alt="Laptop1"
+          />
+          <p class="tes">Huawei Matebook Laptop</p>
+        </div>
+      </div>
+      <div class="hero-two">
+        <h1 class="kontenHome">
+          Mudah, Cepat <br />
+          dan Terpercaya
+        </h1>
+        <br />
+        <p>Sewa Laptop Online dimana saja dan kapan saja !</p>
+        <p>
+          Temukan Laptop Impianmu
+          <a href="#section3" style="color: #20cd8d">disini</a>
+        </p>
+
+        <div class="navbar">
+          <div class="isiNavbar">
+            <a href="#section3">daftar <br />laptop</a>
+            <br />
+            <br />
+            <br />
+            <a href="checkout.html"
+              >sewa <br />
+              sekarang</a
+            >
+            <br />
+            <br />
+            <br />
+            <a href="hubungi.html"
+              >hubungi <br />
+              kami</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ini page kedua -->
+    <div class="section2" id="section2">
+      <!-- Card 1 -->
+      <div class="card1">
+        <div class="imgBox">
+          <img src="" class="centreImg" alt="laptop" />
+        </div>
+        <div class="contentBox">
+          <h3></h3>
+          <p>harga sewa mulai dari</p>
+          <p class="diskon"></p>
+          <p class="price"></p>
+          <a href="checkout.html" class="buy">Sewa Sekarang!</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card2">
+        <div class="imgBox">
+          <img src="" class="centreImg" alt="laptop" />
+        </div>
+        <div class="contentBox">
+          <h3></h3>
+          <p>harga sewa mulai dari</p>
+          <p class="diskon"></p>
+          <p class="price"></p>
+          <a href="checkout.html" class="buy">Sewa Sekarang!</a>
+        </div>
+      </div>
+
+      <div class="content1">
+        <h1>Produk</h1>
+        <h1>Populer Minggu Ini !</h1>
+      </div>
+
+      <div class="content2">
+        <h3>
+          Mengapa Harus
+          <a href="hubungi.html" style="text-decoration: none; color: #20cd8d"
+            >Kami</a
+          >?
+        </h3>
+      </div>
+
+      <div class="box1">
+        <div class="imgBox1">
+          <img src="images/icons/price.png" alt="img1" class="imgBox1" />
+        </div>
+        <h4 class="textBox1">Harga Bersaing</h4>
+      </div>
+
+      <div class="box2">
+        <div class="imgBox2">
+          <img src="images/icons/shield.webp" class="imgBox2" alt="img2" />
+        </div>
+        <h4 class="textBox2">kualitas barang terjamin</h4>
+      </div>
+    </div>
+
+    <!-- ini page ketiga  -->
+    <div class="section3" id="section3">
+      <div>
+        <p class="logoSection">daftar laptop</p>
+      </div>
+      <div class="headerSection">
+        <img
+          src="images/icons/sortIcon.webp"
+          class="sortIcon"
+          alt=""
+          srcset=""
+        />
+        <select id="sort" onchange="sortLaptops()">
+          <option value="" disabled selected hidden>Sort By</option>
+          <option value="name">A-Z</option>
+          <option value="highPrice">Highest Price</option>
+          <option value="lowPrice">Lowest Price</option>
+        </select>
+        <img src="images/icons/filterIcon.webp" class="filterIcon" srcset="" />
+
+        <select id="brandFilter" onchange="filterLaptopsByBrand()">
+          <option value="" disabled selected hidden>Filter Brand</option>
+          <option value="all">All brand</option>
+          <option value="lenovo">Lenovo</option>
+          <option value="huawei">Huawei</option>
+          <option value="dell">Dell</option>
+          <option value="asus">Asus</option>
+          <option value="msi">MSI</option>
+        </select>
+        <img src="images/icons/glass.webp" class="glassIcon" />
+        <input
+          type="text"
+          id="search"
+          placeholder="Cari Laptop"
+          oninput="searchLaptops()"
+          autocomplete="off"
+        />
+      </div>
+      <div id="laptopContainer">
+        <div id="resultContainer"></div>
+      </div>
+    </div>
+    <script src="appHome.js"></script>
+  </body>
+</html>
